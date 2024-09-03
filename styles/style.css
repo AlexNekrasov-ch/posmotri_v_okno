@@ -153,7 +153,7 @@ inset: 5px 3px 0 0;
   margin-right: 12px;             /*     HERE!!!        */
 }
 
-.search-form__pseudo-checkbox:checked {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-color: #fff;
 }
 

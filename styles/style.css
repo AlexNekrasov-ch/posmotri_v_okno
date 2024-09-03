@@ -248,7 +248,7 @@ ol {
   display: flex;
   flex-direction: column;  
   gap: 32px;
-  box-sizing: border-box;
+  box-sizing: border-box;                    /*   WHY THIS PROPERTY EVERYWHERE ???    */
 
 
 
@@ -256,8 +256,12 @@ ol {
 
 .content__list-item {
   margin-bottom: 28px;
-  /*padding: 3px 1px; */
-  /*background-color: yellowgreen;*/
+  /*background-color: #545050;*/
+  /*outline: 2px solid #fff;
+  outline-offset: 1px;*/
+}
+
+.content__card-link_current {
   background-color: #545050;
 }
 
@@ -300,8 +304,6 @@ ol {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
-  /*line-height: 16px;*/
-  /* or 90% */
   flex-grow: 0;
 }
 
@@ -312,6 +314,7 @@ ol {
 
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
 }

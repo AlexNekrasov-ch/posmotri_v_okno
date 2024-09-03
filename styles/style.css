@@ -123,7 +123,8 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) > .search-form__textfield,
-.search-form__label:has(:focus-visible) {
+.search-form__label:has(:focus-visible),
+.button:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 2px;
 }
@@ -188,6 +189,10 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+}
+
+.button:active {
+  background: #545050;
 }
 
 .search-form__submit-button {
@@ -269,6 +274,11 @@ ol {
   padding-left: 3px;  
   padding-right: 6px;
   padding-top: 6px;
+}
+
+.content__video-card-description-container:hover .content__video-card-description {
+  text-decoration: underline;
+
 }
 
 .content__video-card-title {

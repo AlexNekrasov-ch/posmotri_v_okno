@@ -263,12 +263,13 @@ ol {
 
 .content__card-link_current {
   background-color: #545050;
+  padding: 2px 1px;
 }
 
 .content__video-card {
   display: grid;
   grid-template-columns: auto 393px;
-  padding: 3px 1px;  
+  /*padding: 0 1px;*/
 }
 
        /*     div: content__video-card-description-container       */

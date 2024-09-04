@@ -57,7 +57,8 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr;*/         /*      TRY ANOTHER ONE!!!       */
+  grid-template-columns: 0.64fr 0.36fr;
   grid-column-gap: 60px;
   /*margin: auto;*/
   /*margin-left: 39.9px;
@@ -262,35 +263,44 @@ ol {
 
 .content__list-item {
   
-  /*background-color: #545050;*/
+  background-color: #545050;
   /*outline: 2px solid #fff;
   outline-offset: 1px;*/
 }
-
+/*                                            UNCOMMENT LATER !!!
 .content__card-link_current {
   background-color: #545050;
   padding: 2px 1px;
+}*/
+
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
 }
 
 .content__video-card {
   display: grid;
   grid-template-columns: auto 393px;
-  /*padding: 0 1px;*/
+  padding: 3px 1px;
 }
 
        /*     div: content__video-card-description-container       */
 
 .content__video-card-description-container {
-  width: 393px;
+  width: 402px;
   padding-left: 3px;  
   padding-right: 6px;
-  padding-top: 6px;
+  padding-top: 9px;
 }
 
+
+/*
+.content__video-card-description-container:hover .content__video-card-title,
 .content__video-card-description-container:hover .content__video-card-description {
   text-decoration: underline;
-
-}
+}*/
 
 .content__video-card-title {
   font-style: Oswald;
@@ -314,23 +324,58 @@ ol {
   flex-grow: 0;
 }
 
-
-
-
-
-
-
-.content__card-link {
-  display: block;
-  text-decoration: none;
-  color: #fff;
+.content__video-card-thumbnail {
+  width: 388px;
+  height: 209px;
+  /*position: relative;
+  left: 9px;*/
 }
 
 
 
-.content__video-card-thumbnail {
-  width: 390px;
-  height: 209px;
-  position: relative;
-  left: 9px;
+
+                                /*     EXPERIMENT BELOW !!!!!!!     */
+
+.content__video-card-title, .content__video-card-description {
+    position: relative;
+    display: inline-block; /* Allows the underline to be closer to the text */
+}
+
+
+
+
+
+.content__video-card-description-container .content__video-card-title,
+.content__video-card-description-container .content__video-card-description {
+    position: relative;
+    display: inline-block; /* Allows the underline to be closer to the text */
+}
+
+.content__video-card-description-container .content__video-card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px; /* This controls the distance of the underline from the text */
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.content__video-card-description-container .content__video-card-description::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px; /* This controls the distance of the underline from the text */
+  height: 1px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.content__video-card-description-container:hover .content__video-card-title::after,
+.content__video-card-description-container:hover .content__video-card-description::after {
+    transform: scaleX(1);
 }

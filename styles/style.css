@@ -232,7 +232,7 @@ ol {
   /*font-weight: 700;*/
   line-height: 94%;  
   text-transform: uppercase;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   word-spacing: -3px;
 
 
@@ -255,23 +255,23 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;  
-  gap: 64px;
+  gap: 59px;
   box-sizing: border-box;                    /*   WHY THIS PROPERTY EVERYWHERE ???    */
   margin-right: 66px;
 
 }
 
 .content__list-item {
-  
-  background-color: #545050;
   /*outline: 2px solid #fff;
   outline-offset: 1px;*/
-}
-/*                                            UNCOMMENT LATER !!!
-.content__card-link_current {
+  padding: 4px 0 4px 1.5px;
   background-color: #545050;
-  padding: 2px 1px;
-}*/
+
+}
+
+.content__card-link_current {
+  /*background-color: #545050;*/
+}
 
 
 .content__card-link {
@@ -281,26 +281,21 @@ ol {
 }
 
 .content__video-card {
-  display: grid;
+  /*display: grid;
   grid-template-columns: auto 393px;
-  padding: 3px 1px;
+  padding: 3px 1px;*/
+  display: flex;
 }
 
-       /*     div: content__video-card-description-container       */
+
 
 .content__video-card-description-container {
   width: 402px;
   padding-left: 3px;  
   padding-right: 6px;
-  padding-top: 9px;
+  padding-top: 6px;
 }
 
-
-/*
-.content__video-card-description-container:hover .content__video-card-title,
-.content__video-card-description-container:hover .content__video-card-description {
-  text-decoration: underline;
-}*/
 
 .content__video-card-title {
   font-style: Oswald;
@@ -313,37 +308,32 @@ ol {
   -o-transform: scaleY(1.2);
   transform: scaleY(1.2);
   line-height: 62.3px;
+
+
+  max-width: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
-  margin-bottom: 2px;
+  /*margin-bottom: 2px;*/
   font-family: 'Fira Sans Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
-  flex-grow: 0;
 }
 
 .content__video-card-thumbnail {
-  width: 388px;
-  height: 209px;
-  /*position: relative;
-  left: 9px;*/
+  min-width: 390.1px;
+  height: 206px;
+  object-fit: cover;
+  object-position: center;
 }
-
 
 
 
                                 /*     EXPERIMENT BELOW !!!!!!!     */
-
-.content__video-card-title, .content__video-card-description {
-    position: relative;
-    display: inline-block; /* Allows the underline to be closer to the text */
-}
-
-
-
-
 
 .content__video-card-description-container .content__video-card-title,
 .content__video-card-description-container .content__video-card-description {

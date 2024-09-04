@@ -265,8 +265,16 @@ ol {
   /*outline: 2px solid #fff;
   outline-offset: 1px;*/
   padding: 4px 0 4px 1.5px;
-  background-color: #545050;
+  /*background-color: #545050;*/  
+}
 
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 1px;
 }
 
 .content__card-link_current {

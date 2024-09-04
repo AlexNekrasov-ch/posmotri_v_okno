@@ -264,7 +264,7 @@ ol {
 .content__list-item {
   /*outline: 2px solid #fff;
   outline-offset: 1px;*/
-  padding: 4px 0 4px 1.5px;
+  padding: 4px 0 4px 0;
   /*background-color: #545050;*/  
 }
 
@@ -277,15 +277,20 @@ ol {
   outline-offset: 1px;
 }
 
-.content__card-link_current {
-  /*background-color: #545050;*/
-}
-
-
 .content__card-link {
   display: block;
   text-decoration: none;
   color: #fff;
+
+  /*padding-left: 3px;*/
+}
+
+.content__card-link_current {
+  background-color: rgb(84, 80, 80);
+  box-shadow: 
+        -4px 3px 0 rgba(84, 80, 80, 1), /* Top shadow, shifted 2px left */
+        -4px -3px 0 rgba(84, 80, 80, 1);    /* Bottom shadow */
+  /*margin-left: 3px;     ЗАСЧЕТ МАРДЖИН-ЛЭФТ МОЖНО КОНТЕЙНЕР СДВИГАТЬ     */
 }
 
 .content__video-card {
@@ -299,7 +304,7 @@ ol {
 
 .content__video-card-description-container {
   width: 402px;
-  padding-left: 3px;  
+  /*padding-left: 3px;  */
   padding-right: 6px;
   padding-top: 6px;
 }
@@ -310,13 +315,9 @@ ol {
   font-weight: 600;
   font-size: 60px;
   text-transform: uppercase;
-  -webkit-transform: scaleY(1.2);
-  -moz-transform: scaleY(1.2);
-  -ms-transform: scaleY(1.2);
-  -o-transform: scaleY(1.2);
-  transform: scaleY(1.2);
-  line-height: 62.3px;
-
+  
+  /*line-height: 62.3px;*/
+margin: 0;
 
   max-width: 380px;
   white-space: nowrap;

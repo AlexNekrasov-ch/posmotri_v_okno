@@ -105,6 +105,11 @@ ol {
   word-spacing: -1px;
 }
 
+.search-form__textfield,
+.search-form__checkbox {
+  appearance: none;
+}
+
 .search-form__textfield:focus {
   outline: none;
 }

@@ -1,6 +1,6 @@
 .error {
   position: absolute;
-  inset: 0;
+  inset: 423px 37px -514px 61px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
 .error__title {
   color: #fff;
   font-family: Oswald, sans-serif;
-  font-size: 30px;
+  font-size: 54px;
   text-align: center;
   text-transform: uppercase;
 }

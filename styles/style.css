@@ -128,7 +128,27 @@ ol {
   display: flex;
 }
 
-.search-form__label:has(:focus-visible) > .search-form__textfield,
+
+.search-form__textfield:active {
+/*.search-form__textfield:active {   /*   HOW????   */*
+  /*outline: none;*/
+  
+}
+
+
+
+
+/* THIS RULE DOESN'T FUNCTION
+.search-form__label > .search-form__textfield:focus {
+  outline: none;
+}
+*/
+
+
+
+
+/* THIS RULE WORKS!!!!!*/
+.search-form__label > .search-form__textfield:focus-visible,
 .search-form__label:has(:focus-visible),
 .button:focus-visible {
   outline: 2px solid #fff;
@@ -195,10 +215,17 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+  outline: none;
 }
 
 .button:active {
   background: #545050;
+  text-decoration: none;
+}
+
+.button:not(:hover, :focus-visible) {
+  text-decoration: none;
+  outline: none;
 }
 
 .search-form__submit-button {

@@ -134,7 +134,7 @@ ol {
 }
 
 .search-form__label:has(.search-form__pseudo-checkbox):hover
-.search-form__label-text {
+  .search-form__label-text {
   /*      checkbox hover       */
   cursor: pointer;
   text-decoration: none;
@@ -233,7 +233,7 @@ ol {
   /*font-weight: 700;*/
   line-height: 94%;
   text-transform: uppercase;
-  margin-bottom: 46px;
+  margin-bottom: 43px;
   word-spacing: -3px;
 
   position: relative;
@@ -254,13 +254,22 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 59px;
   box-sizing: border-box; /*   WHY THIS PROPERTY EVERYWHERE ???    */
   margin-right: 66px;
   box-sizing: border-box;
-  /*height: 300px;
-  overflow: auto;*/
-  
+  height: 600px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+
+.content__list {
+  padding: 3px 3px;
 }
 
 .content__list-item {
@@ -268,7 +277,6 @@ ol {
   outline-offset: 1px;*/
   padding: 4px 0 4px 0;
   /*background-color: #545050;*/
-  
 }
 
 .content__list-item:focus {
@@ -290,8 +298,7 @@ ol {
 
 .content__card-link_current {
   background-color: rgb(84, 80, 80);
-  box-shadow: -4px 3px 0 rgba(84, 80, 80, 1),
-              -4px -3px 0 rgba(84, 80, 80, 1); 
+  box-shadow: -4px 3px 0 rgba(84, 80, 80, 1), -4px -3px 0 rgba(84, 80, 80, 1);
   /*margin-left: 3px;     ЗАСЧЕТ МАРДЖИН-ЛЭФТ МОЖНО КОНТЕЙНЕР СДВИГАТЬ     */
 }
 

@@ -120,33 +120,21 @@ ol {
 
 .search-form__label {
   display: flex;
+  width: fit-content;
 }
 
-.search-form__textfield {
-  color: #fff;
+.search-form__label:has(.search-form__textfield:focus-visible),
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
-
-/* THIS RULE DOESN'T FUNCTION
-.search-form__label > .search-form__textfield:focus {
-  outline: none;
-}
-*/
 
 .search-form__textfield:focus {
   outline: none;
 }
 
-/* THIS RULE WORKS!!!!!*/
-/*.search-form__label >*/
-.search-form__textfield:focus-visible,
-/*.search-form__label:has(:focus-visible),*/
-.button:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
-
 .search-form__label:has(.search-form__pseudo-checkbox):hover
-  .search-form__label-text {
+.search-form__label-text {
   /*      checkbox hover       */
   cursor: pointer;
   text-decoration: none;
@@ -180,6 +168,7 @@ ol {
   border-width: 1px 0;
   border-style: solid;
   border-color: #fff;
+  color: #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -268,6 +257,10 @@ ol {
   gap: 59px;
   box-sizing: border-box; /*   WHY THIS PROPERTY EVERYWHERE ???    */
   margin-right: 66px;
+  box-sizing: border-box;
+  /*height: 300px;
+  overflow: auto;*/
+  
 }
 
 .content__list-item {
@@ -275,6 +268,7 @@ ol {
   outline-offset: 1px;*/
   padding: 4px 0 4px 0;
   /*background-color: #545050;*/
+  
 }
 
 .content__list-item:focus {
@@ -297,7 +291,7 @@ ol {
 .content__card-link_current {
   background-color: rgb(84, 80, 80);
   box-shadow: -4px 3px 0 rgba(84, 80, 80, 1),
-    /* Top shadow, shifted 2px left */ -4px -3px 0 rgba(84, 80, 80, 1); /* Bottom shadow */
+              -4px -3px 0 rgba(84, 80, 80, 1); 
   /*margin-left: 3px;     ЗАСЧЕТ МАРДЖИН-ЛЭФТ МОЖНО КОНТЕЙНЕР СДВИГАТЬ     */
 }
 
@@ -313,6 +307,8 @@ ol {
   /*padding-left: 3px;  */
   padding-right: 6px;
   padding-top: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-title {
@@ -336,6 +332,8 @@ ol {
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-thumbnail {

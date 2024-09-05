@@ -132,9 +132,14 @@ ol {
 }
 */
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 /* THIS RULE WORKS!!!!!*/
-.search-form__label > .search-form__textfield:focus-visible,
-.search-form__label:has(:focus-visible),
+/*.search-form__label >*/
+.search-form__textfield:focus-visible,
+/*.search-form__label:has(:focus-visible),*/
 .button:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 2px;
@@ -221,6 +226,7 @@ ol {
 }
 
 .more-button {
+  width: 100%;
 }
 
 .content__details {

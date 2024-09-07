@@ -238,14 +238,6 @@ ol {
   color: #545050;
 }
 
-.content__title-hyphen {
-  position: absolute;
-  background-image: url(../images/hyphen.jpg);
-  height: 15px;
-  width: 39px;
-  inset: 70.6px 0 0 188px;
-}
-
 .content__list {
   display: flex;
   flex-direction: column;

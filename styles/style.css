@@ -246,15 +246,7 @@ ol {
   box-sizing: border-box;
   height: 597px;
   overflow: auto;
-  scrollbar-width: none;
   margin-bottom: 270px;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
-}
-
-.content__list {
   padding: 3px 3px;
 }
 

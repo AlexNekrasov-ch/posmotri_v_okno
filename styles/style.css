@@ -301,8 +301,6 @@ ol {
   width: 402px;
   padding-right: 6px;
   padding-top: 6px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .content__video-card-title {

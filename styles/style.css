@@ -51,9 +51,8 @@ ol {
   grid-template-columns: 0.64fr 0.36fr;
   grid-column-gap: 60px;
   height: inherit;
-  padding-top: -1px;
   width: 2280px;
-  margin-top: 274px;
+  margin-top: 273px;
   margin-left: 52px;
 }
 

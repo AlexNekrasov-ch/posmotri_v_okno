@@ -128,7 +128,7 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  position: absolute;
+  position: relative;
   left: -1px;
 }
 

@@ -243,7 +243,6 @@ ol {
   flex-direction: column;
   justify-content: start;
   margin-right: 66px;
-  box-sizing: border-box;
   height: 597px;
   overflow: auto;
   margin-bottom: 270px;

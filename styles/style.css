@@ -242,7 +242,6 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 64px;
   box-sizing: border-box;
   margin-right: 66px;
   box-sizing: border-box;
@@ -262,6 +261,10 @@ ol {
 
 .content__list-item {
   padding: 0 0 4px 0;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 .content__list-item:focus {

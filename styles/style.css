@@ -58,7 +58,7 @@ ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
-  margin: 133px 0;
+  /*margin: 133px 0;*/
   /*
   display: grid;
   grid-template-columns: 0.64fr 0.36fr;
@@ -219,7 +219,7 @@ ol {
   box-sizing: border-box;
   display: inline-block;
   appearance: none;
-  height: 34px;
+  min-height: 34px;
   cursor: pointer;
   background-color: transparent;
   color: #fff;
@@ -276,7 +276,6 @@ ol {
 
 .title {
   height: 212px;
-  margin-top: 2px;
 
   font-family: "Oswald", sans-serif;
   font-size: 75px;
@@ -304,10 +303,13 @@ ol {
   overflow-y: auto;
   /*margin-bottom: 270px;*/
   padding: 3px 3px;
+  
+
+  /*margin-right: 3px;*/
 }
 
 .content__list-item {
-  padding: 0 0 4px 0;
+  /*padding: 0 0 4px 0;*/
 }
 
 .content__list-item:not(:last-child) {
@@ -323,6 +325,7 @@ ol {
   display: block;
   text-decoration: none;
   color: #fff;
+  /*margin: 2px;*/
 }
 
 .content__card-link:hover * {
@@ -374,7 +377,7 @@ ol {
   /*position: relative;*/
   /*margin: -10px;*/
   /*left: 5px;*/
-  max-width: 400px;
+  max-width: 195px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -385,6 +388,7 @@ ol {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  /*line-height: 0.9;*/
 }
 
 .content__video-card-thumbnail {

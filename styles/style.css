@@ -242,7 +242,6 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  box-sizing: border-box;
   margin-right: 66px;
   box-sizing: border-box;
   height: 597px;

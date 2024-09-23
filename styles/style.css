@@ -249,6 +249,7 @@ ol {
 }
 
 .content__list {
+  position: relative;
   height: 298px;
   display: flex;
   flex-direction: column;

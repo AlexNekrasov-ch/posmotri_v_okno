@@ -228,7 +228,7 @@ ol {
 }
 
 .content__details {
-  min-width: 399px;
+  inline-size: 399px;
   display: flex;
   flex-direction: column;
   gap: 23px;
@@ -313,7 +313,7 @@ ol {
 }
 
 .content__video-card-description-container {
-  width: 200px;
+  width: 100%;
   padding-left: 2px;
   padding-top: 6px;
 }
@@ -338,7 +338,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  min-width: 195px;
+  width: 195px;
   height: 103px;
   object-fit: cover;
   object-position: center;

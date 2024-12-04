@@ -251,6 +251,7 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
+  width: 399px;
   display: flex;
   flex-direction: column;
   justify-content: start;
